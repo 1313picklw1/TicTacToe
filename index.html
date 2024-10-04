@@ -71,13 +71,13 @@
 <script>
     // Firebase configuration
     const firebaseConfig = {
-        apiKey: "AIzaSyBbYsahHF3OOwMEMKCs_YmsLSEYnwXQaKc",
-        authDomain: "nickys-tick.firebaseapp.com",
-        projectId: "nickys-tick",
-        storageBucket: "nickys-tick.appspot.com",
-        messagingSenderId: "617733846990",
-        appId: "1:617733846990:web:b639cb7f06d30d64195d9f",
-        measurementId: "G-NNQGG1F4HP"
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID",
+        measurementId: "YOUR_MEASUREMENT_ID"
     };
 
     // Initialize Firebase
@@ -178,6 +178,7 @@
             loadGameState({ board: Array(9).fill(null), currentPlayer: 'X' });
         }).catch(error => {
             console.error("Authentication error:", error);
+            alert("Error during authentication: " + error.message);
         });
     });
 
