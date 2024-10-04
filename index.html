@@ -14,14 +14,12 @@
             height: 100vh;
             margin: 0;
         }
-
         .board {
             display: grid;
             grid-template-columns: repeat(3, 100px);
             grid-template-rows: repeat(3, 100px);
             gap: 5px;
         }
-
         .cell {
             width: 100px;
             height: 100px;
@@ -33,16 +31,13 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-
         .cell:hover {
             background: #ddd;
         }
-
         #status {
             margin-top: 20px;
             font-size: 1.5em;
         }
-
         #auth {
             margin-bottom: 20px;
         }
@@ -77,12 +72,12 @@
     // Firebase configuration
     const firebaseConfig = {
         apiKey: "AIzaSyBbYsahHF3OOwMEMKCs_YmsLSEYnwXQaKc",
-  authDomain: "nickys-tick.firebaseapp.com",
-  projectId: "nickys-tick",
-  storageBucket: "nickys-tick.appspot.com",
-  messagingSenderId: "617733846990",
-  appId: "1:617733846990:web:b639cb7f06d30d64195d9f",
-  measurementId: "G-NNQGG1F4HP"
+        authDomain: "nickys-tick.firebaseapp.com",
+        projectId: "nickys-tick",
+        storageBucket: "nickys-tick.appspot.com",
+        messagingSenderId: "617733846990",
+        appId: "1:617733846990:web:b639cb7f06d30d64195d9f",
+        measurementId: "G-NNQGG1F4HP"
     };
 
     // Initialize Firebase
@@ -101,7 +96,6 @@
     const resetButton = document.getElementById('reset');
     const loginButton = document.getElementById('login');
     const logoutButton = document.getElementById('logout');
-    const authDiv = document.getElementById('auth');
     const gameDiv = document.getElementById('game');
 
     // Game state functions
